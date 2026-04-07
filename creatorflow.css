@@ -48,7 +48,7 @@ nav {
 .nav-links a:hover{
     color:#FF5C00;
 }
-.contact-btn {
+.contact-btn, .book-btn {
     display: flex;
     align-items: center;
     background-color: #1a1a1a; 
@@ -60,7 +60,7 @@ nav {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
 }
 
-.btn-text {
+.btn-text, .btn-book-text {
     color: white;
     font-size: 18px;
     font-weight: 500;
@@ -83,7 +83,7 @@ nav {
     font-size: 18px;
 }
 
-.contact-btn:hover .icon-circle {
+.contact-btn:hover, .book-btn:hover .icon-circle {
     background-color: #FF5C00; 
     transform: scale(1.05); 
 }
@@ -110,4 +110,90 @@ h1 span {
     margin-bottom: 30px;
 }
 
+.about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px;
+    background-color: transparent; 
+}
 
+
+.about-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #444;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.star {
+    color: #FF5C00;
+}
+
+
+.main-heading {
+    font-size: 58px;
+    font-weight: 850;
+    line-height: 1.1;
+    letter-spacing: -2.5px; 
+    max-width: 900px;
+    color: #1a1a1a;
+    margin-bottom: 60px;
+}
+
+.orange {
+    color: #FF5C00;
+}
+
+
+.stats-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #efefef;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 800px;
+    padding: 60px 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.02);
+}
+
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.stat-num {
+    font-size: 48px;
+    font-weight: 850;
+    color: #FF5C00;
+    margin: 0;
+    letter-spacing: -1px;
+}
+
+.stat-desc {
+    font-size: 14px;
+    color: #888;
+    font-weight: 500;
+    margin: 0;
+}
+
+
+body {
+    background-image: 
+        linear-gradient(#f2f2f2 1px, transparent 1px),
+        linear-gradient(90deg, #f2f2f2 1px, transparent 1px);
+    background-size: 30px 30px;
+}
